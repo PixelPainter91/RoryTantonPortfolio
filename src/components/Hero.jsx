@@ -1,104 +1,73 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+import { designProcess } from '../utils/data';
+
+const fadeUp = (delay = 0) => ({
+  initial: { opacity: 0, y: 30 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.7, delay, ease: 'easeOut' },
+});
 
 const Hero = () => {
   return (
-    <section id="about" className="hero">
-        <motion.div
-        className="floating-emoji"
-        animate={{
-          y: [0, -20, 0],
-          rotate: [0, 10, -10, 0],
-        }}
-        transition={{
-          duration: 4,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      >
-        {/* Profile Picture */}
-          <motion.div
-            className="profile-picture-container"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <img 
-              src="/src/assets/profile.jpg" 
-              alt="Rory Tanton" 
-              className="profile-picture"
-            />
-          </motion.div>
-      </motion.div>
-      <div className="hero-content">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          <motion.h1 
-            className="hero-name"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: "backOut" }}
-          >
-            Rory Tanton
-          </motion.h1>
-          
-          <motion.div
-            className="hero-title"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4 }}
-          >
-            <motion.span
-              initial={{ y: 100 }}
-              animate={{ y: 0 }}
-              transition={{ delay: 0.5, duration: 0.6, ease: "backOut" }}
-            >
-              Software Developer
-            </motion.span>
-          </motion.div>
+    <section className="hero" id="about">
+      {/* text content */}
+      <div className="hero-text">
+        <motion.div className="hero-eyebrow" {...fadeUp(0.2)}>
+          Fullstack Developer &amp; UI/UX Designer
+        </motion.div>
 
-          <motion.p
-            className="hero-description"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 0.6 }}
-          >
-            From engineering strategic weapons systems in the Royal Navy to building modern web applications. 
-            I bring precision, problem-solving, and a passion for clean code to every project.
-          </motion.p>
+        <motion.h1 className="hero-name" {...fadeUp(0.4)}>
+          Rory<br /><em>Tanton</em>
+        </motion.h1>
 
-          <motion.div
-            className="hero-buttons"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1, duration: 0.6 }}
-          >
-            <motion.a
-              href="https://github.com/PixelPainter91"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-primary"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              View GitHub
-            </motion.a>
-            <motion.a
-              href="#contact"
-              className="btn btn-secondary"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Get In Touch
-            </motion.a>
-          </motion.div>
+        <motion.p className="hero-tagline" {...fadeUp(0.6)}>
+          From engineering weapons systems in the Royal Navy to crafting digital
+          experiences. I bring systems thinking, precision, and a user-first
+          mindset to every design and build.
+        </motion.p>
+
+        <motion.div className="hero-cta" {...fadeUp(0.8)}>
+          <a href="#work" className="btn btn-primary">View Case Studies ↓</a>
+          <a href="#contact" className="btn btn-outline">Get In Touch</a>
         </motion.div>
       </div>
 
-      
+      {/* design process panel */}
+      <motion.div
+        className="hero-visual"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1 }}
+      >
+        <p className="process-label">Design Process</p>
+
+        <div className="process-steps">
+          {designProcess.map((step) => (
+            <div className="process-step" key={step.num}>
+              <span className="step-num">{step.num}</span>
+              <div className="step-info">
+                <h4>{step.title}</h4>
+                <p>{step.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="hero-stats">
+          <div className="stat">
+            <span className="stat-num">1+</span>
+            <span className="stat-label">Live Products</span>
+          </div>
+          <div className="stat">
+            <span className="stat-num">10yr</span>
+            <span className="stat-label">Engineering</span>
+          </div>
+          <div className="stat">
+            <span className="stat-num">∞</span>
+            <span className="stat-label">Curiosity</span>
+          </div>
+        </div>
+      </motion.div>
     </section>
   );
 };
