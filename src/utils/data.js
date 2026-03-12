@@ -9,6 +9,18 @@ import assign06 from '../assets/06assignment.png';
 import assign06chat from '../assets/06assignmentchat.png';
 import assign07vid from '../assets/07assignmentspookinggalleryvid.mp4';
 
+// Piece of Mind screenshots
+import pom0 from '../assets/POM0.png';
+import pom01 from '../assets/POM0.1.png';
+import pom02 from '../assets/POM0.2.png';
+import pom03 from '../assets/POM0.3.png';
+import pom1 from '../assets/POM1.png';
+import pom2 from '../assets/POM2.png';
+import pom3 from '../assets/POM3.png';
+import pom4 from '../assets/POM4.png';
+import pom5 from '../assets/POM5.png';
+import pom51 from '../assets/POM5.1.png';
+
 // Nail Wardrobe screenshots
 import nw1 from '../assets/1.1.png';
 import nw2 from '../assets/1.2.png';
@@ -35,6 +47,29 @@ import gg5 from '../assets/2.4.png';
 export const caseStudies = [
   {
     number: "01",
+    title: "Piece of Mind",
+    role: "Solo Developer · UI/UX Designer · Product Owner",
+    description:
+      "Designed and built a full AI-first mobile app in three days using React, Vite and Capacitor. Owned the full product lifecycle from concept and Figma design through to live deployment on Google Play, using Claude Code as a structured engineering partner throughout.",
+    tags: ["UI/UX DESIGN", "MOBILE APP", "REACT", "FIGMA", "CLAUDE CODE", "AI-FIRST"],
+    highlightTag: "UI/UX DESIGN",
+    deliverables: [
+      "Anxiety-first UI/UX design — no timers, no pressure, soft colour palette",
+      "Dark and light mode",
+      "Box breathing built into gameplay",
+      "Scrolling mantras for anxious moments",
+      "Live Google Play release",
+      "592 installs in 3 days from a £25.30 ad spend at £0.04 cost per install",
+    ],
+    link: "https://play.google.com/store/apps/details?id=com.pixelpaint.pieceofmind&pcampaignid=web_share",
+    linkLabel: "View on Google Play →",
+    image: pom0,
+    images: [pom0, pom01, pom02, pom03, pom1, pom2, pom3, pom4, pom5, pom51],
+    imageAlt: "Piece of Mind App UI",
+    reverseLayout: false,
+  },
+  {
+    number: "02",
     title: "Nail Wardrobe",
     role: "Product Owner · UI/UX Designer · Project Lead",
     description:
@@ -56,7 +91,7 @@ export const caseStudies = [
     reverseLayout: false,
   },
   {
-    number: "02",
+    number: "03",
     title: "Gains & Guilds",
     role: "Full Stack Developer · UI Designer · Co-Founder",
     description:
@@ -78,7 +113,7 @@ export const caseStudies = [
     reverseLayout: true,
   },
   {
-    number: "03",
+    number: "04",
     title: "Web Applications",
     role: "Full Stack Developer · UI Designer",
     description:
@@ -102,7 +137,7 @@ export const caseStudies = [
     reverseLayout: false,
   },
   {
-    number: "04",
+    number: "05",
     title: "Strategic Weapons Systems + Engineering Surveyor",
     role: "Weapons Engineer · Electrical and Electronic Systems + Mechanical",
     description:
