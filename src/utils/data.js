@@ -43,7 +43,7 @@ import siemi02 from '../assets/siemi-socials/siemi-02-about.jpg';
 import siemi03 from '../assets/siemi-socials/siemi-03-services.png';
 import siemi04 from '../assets/siemi-socials/siemi-04-services-alt.jpg';
 import siemi05 from '../assets/siemi-socials/siemi-05-portfolio.png';
-import siemi06 from '../assets/siemi-socials/siemi-06-portfolio-alt.jpg';
+import siemi06 from '../assets/siemi-socials/siemi-06-portfolio-alt.png';
 import siemi07 from '../assets/siemi-socials/siemi-07-case-study-full.png';
 import siemi08 from '../assets/siemi-socials/siemi-08-case-study-grid.jpg';
 import siemi09 from '../assets/siemi-socials/siemi-09-content-title.png';
