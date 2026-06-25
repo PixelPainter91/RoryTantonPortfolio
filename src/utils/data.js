@@ -37,6 +37,29 @@ import nwButtons from '../assets/NailWardrobbuttons.png';
 // Technical work screenshot
 import technicalWork from '../assets/technicalwork.png';
 
+// Siemi Socials screenshots
+import siemi01 from '../assets/siemi-socials/siemi-01-home.png';
+import siemi02 from '../assets/siemi-socials/siemi-02-about.jpg';
+import siemi03 from '../assets/siemi-socials/siemi-03-services.png';
+import siemi04 from '../assets/siemi-socials/siemi-04-services-alt.jpg';
+import siemi05 from '../assets/siemi-socials/siemi-05-portfolio.png';
+import siemi06 from '../assets/siemi-socials/siemi-06-portfolio-alt.jpg';
+import siemi07 from '../assets/siemi-socials/siemi-07-case-study-full.png';
+import siemi08 from '../assets/siemi-socials/siemi-08-case-study-grid.jpg';
+import siemi09 from '../assets/siemi-socials/siemi-09-content-title.png';
+import siemi10 from '../assets/siemi-socials/siemi-10-reels-carousel.jpg';
+import siemi11 from '../assets/siemi-socials/siemi-11-reels-closeup.png';
+import siemi12 from '../assets/siemi-socials/siemi-12-reels-grid.png';
+import siemi13 from '../assets/siemi-socials/siemi-13-photography-grid.png';
+import siemi14 from '../assets/siemi-socials/siemi-14-tiktoks.png';
+import siemi15 from '../assets/siemi-socials/siemi-15-stats-cta.png';
+import siemi16 from '../assets/siemi-socials/siemi-16-contact.png';
+import siemi17 from '../assets/siemi-socials/siemi-17-worked-with.png';
+import siemi18 from '../assets/siemi-socials/siemi-18-mobile-home.png';
+import siemi19 from '../assets/siemi-socials/siemi-19-mobile-nav.png';
+import siemi20 from '../assets/siemi-socials/siemi-20-mobile-photography.png';
+import siemi21 from '../assets/siemi-socials/siemi-21-mobile-video-player.png';
+
 // Gains & Guilds screenshots
 import gg1 from '../assets/2.png';
 import gg2 from '../assets/2.1.png';
@@ -47,6 +70,33 @@ import gg5 from '../assets/2.4.png';
 export const caseStudies = [
   {
     number: "01",
+    title: "Siemi Socials — Personal Portfolio Site",
+    role: "Full Stack Developer · UI/UX Designer · Freelance",
+    description:
+      "Designed and built a full personal portfolio and case-study site from scratch for a social media strategist client — translating their brand identity into a working design system, building bespoke interactive components for showcasing video content, and wiring up a serverless backend contact flow, all without a CMS or page builder.",
+    tags: ["Freelance", "React", "Vite", "Framer Motion", "Vercel Serverless"],
+    highlightTag: "Freelance",
+    deliverables: [
+      "Custom design-token system driving a cohesive sage/blush/cream brand palette",
+      "Phone-mockup video player with tap-to-pause, hover-reveal mute, and volume slider",
+      "Singleton audio coordination so only one autoplaying clip is ever audible at once",
+      "Horizontally scrollable carousels with scroll-snap and center-detection",
+      "Editorial case-study layout with 3D flip-card image reveals",
+      "Serverless contact form via Vercel Functions + Resend API",
+    ],
+    link: null,
+    linkLabel: null,
+    image: siemi01,
+    images: [
+      siemi01, siemi02, siemi03, siemi04, siemi05, siemi06, siemi07, siemi08,
+      siemi09, siemi10, siemi11, siemi12, siemi13, siemi14, siemi15, siemi16,
+      siemi17, siemi18, siemi19, siemi20, siemi21,
+    ],
+    imageAlt: "Siemi Socials — Personal Portfolio Site",
+    reverseLayout: false,
+  },
+  {
+    number: "02",
     title: "Piece of Mind",
     role: "Solo Developer · UI/UX Designer · Product Owner",
     description:
@@ -69,7 +119,7 @@ export const caseStudies = [
     reverseLayout: false,
   },
   {
-    number: "02",
+    number: "03",
     title: "Nail Wardrobe",
     role: "Product Owner · UI/UX Designer · Project Lead",
     description:
@@ -91,7 +141,7 @@ export const caseStudies = [
     reverseLayout: false,
   },
   {
-    number: "03",
+    number: "04",
     title: "Gains & Guilds",
     role: "Full Stack Developer · UI Designer · Co-Founder",
     description:
@@ -113,7 +163,7 @@ export const caseStudies = [
     reverseLayout: true,
   },
   {
-    number: "04",
+    number: "05",
     title: "Web Applications",
     role: "Full Stack Developer · UI Designer",
     description:
@@ -137,7 +187,7 @@ export const caseStudies = [
     reverseLayout: false,
   },
   {
-    number: "05",
+    number: "06",
     title: "Strategic Weapons Systems + Engineering Surveyor",
     role: "Weapons Engineer · Electrical and Electronic Systems + Mechanical",
     description:
